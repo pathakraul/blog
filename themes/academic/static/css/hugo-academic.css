@@ -49,7 +49,7 @@ body {
   padding-top: 0;
   counter-reset: captions;
   font-size: 18px;
-  color: #000000;
+  color: #393939;
   font-family: 'Droid Sans';
 
 }
@@ -453,13 +453,13 @@ article {
   line-height: 30px; /* Match share bar line height. */
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: #1948b8;
+  color: #393939;
   font-family: 'Roboto'
 
 }
 
 .article-metadata a {
-  color: #888;
+  color: #393939;
 }
 
 .article-metadata a:hover {

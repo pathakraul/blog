@@ -1,8 +1,11 @@
 +++
 date = "2017-03-12T15:54:54+05:30"
 title = "Easy way to deploy hugo site to github pages from scratch"
-categories = [""]
-tags = ["hugo", "github", "blog"]
+#categories = [""]
+tags = ["hugo", "github"]
+summary = """
+Easy way to deploy hugo static website to github pages. 
+"""
 
 +++
 
@@ -26,6 +29,7 @@ First, a warning:
 
 ## Don't Make a `gh-pages` Branch
 
+{{% alert idea %}}
 A lot of the documentation you'll find will talk about creating a branch
 called `gh-pages` for the HTML. This is great if you're creating a portfolio
 site with sub-sites for different projects on GitHub.
@@ -37,10 +41,11 @@ The `gh-pages` branches are what GitHub refers to as _Project Pages_. What
 you need when creating a stand-alone site are _User Pages_ or _Organization Pages_
 (which are the same thing, it just depends on if your GitHub user is a user
 or an organization).
+{{% /alert %}}
 
 Ok, moving on.
 
-## A Tale of Two Repositories
+### A Tale of Two Repositories
 
 The trick to deploying a stand-alone, hugo-generated site that will be hosted
 on a custom domain is that everything within `public/` needs to be in its own

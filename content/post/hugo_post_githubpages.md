@@ -29,19 +29,19 @@ First, a warning:
 
 ## Don't Make a `gh-pages` Branch
 
-{{% alert idea %}}
-A lot of the documentation you'll find will talk about creating a branch
-called `gh-pages` for the HTML. This is great if you're creating a portfolio
-site with sub-sites for different projects on GitHub.
 
-If you're looking to create a stand-alone site mapped to a custom domain,
-then that is not the documentation you need.
+> A lot of the documentation you'll find will talk about creating a branch
+> called `gh-pages` for the HTML. This is great if you're creating a portfolio
+> site with sub-sites for different projects on GitHub.
 
-The `gh-pages` branches are what GitHub refers to as _Project Pages_. What
-you need when creating a stand-alone site are _User Pages_ or _Organization Pages_
-(which are the same thing, it just depends on if your GitHub user is a user
-or an organization).
-{{% /alert %}}
+> If you're looking to create a stand-alone site mapped to a custom domain,
+> then that is not the documentation you need.
+
+> The `gh-pages` branches are what GitHub refers to as _Project Pages_. What
+> you need when creating a stand-alone site are _User Pages_ or _Organization Pages_
+> (which are the same thing, it just depends on if your GitHub user is a user
+> or an organization).
+
 
 Ok, moving on.
 

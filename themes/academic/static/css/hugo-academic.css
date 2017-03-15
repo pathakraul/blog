@@ -445,7 +445,8 @@ article {
 .article-title a {
   color: #151515;
   transition: color 0.6s ease;
-  font-weight: 500;
+  font-weight: 800;
+  color: #696969;
 }
 
 .article-metadata {

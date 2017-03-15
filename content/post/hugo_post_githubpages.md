@@ -4,7 +4,10 @@ title = "Easy way to deploy hugo site to github pages from scratch"
 #categories = [""]
 tags = ["hugo", "github"]
 summary = """
-Easy way to deploy hugo static website to github pages. 
+Easy way to deploy hugo static website to github pages. If you already know how to use Hugo, and you've never used GitHub Pages before, and
+you just want to figure out how to get everything wired up and deployed with the least
+amount of fuss necessary, then a lot of the blog posts and tutorials you'll find are
+going to be a bit frustrating.
 """
 
 +++

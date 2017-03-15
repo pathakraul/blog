@@ -4,7 +4,7 @@ draft = false
 tags = ["jekyll"]
 title = "Migrate from Jekyll to Hugo"
 summary = """
-Learn how to migrate an existing website from Jekyll to Hugo.
+Learn how to migrate an existing website from Jekyll to Hugo. Here are a few tips for migrating an existing website from Jekyll to Hugo. These tips can be applied in conjunction with following Hugo Academic's 
 """
 math = false
 +++

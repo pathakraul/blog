@@ -49,8 +49,8 @@ body {
   padding-top: 0;
   counter-reset: captions;
   font-size: 18px;
-  color: #393939;
-  font-family: 'Droid Sans';
+  color: #494e52;
+  font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
@@ -1160,4 +1160,29 @@ div.alert a:hover {
 .btn-intro:focus {
   background-color: #0288D1;
   color: #fff;
+}
+
+.tocc {
+  min-height:20px;
+  padding:19px;
+  margin-bottom:20px;
+  background-color:#f5f5f5;
+  border:1px solid #e3e3e3;
+  border-radius:4px;
+  -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
+  box-shadow:2px 0px 13px -2px #939393
+}
+
+.tocc blockquote {
+  border-color:#ddd;
+  border-color:rgba(0,0,0,.15)
+}
+
+.tocc-lg {
+  padding:24px;
+  border-radius:6px
+}
+.tocc-sm {
+  padding:9px;
+  border-radius:3px
 }

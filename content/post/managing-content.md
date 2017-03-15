@@ -4,8 +4,9 @@ draft = false
 tags = ["academic", "hugo"]
 title = "Managing content"
 math = false
+summary = "This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles."
 +++
-
+{{% toc %}}
 This is a brief guide to managing content with the Academic framework. Content can include publications, projects, talks, and news/blog articles. After you have read this guide about creating and managing content, you may also be interested to learn about [writing content with Markdown, LaTeX, and Shortcodes]({{< ref "post/writing-markdown-latex.md" >}}).<!--more-->
 
 To enable LaTeX math rendering for a page, you should include `math = true` in the page's `+++` preamble, as demonstrated in the included example site. Otherwise, to enable math on the homepage or for all pages, you must globally set `math = true` in `config.toml`.

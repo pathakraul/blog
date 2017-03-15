@@ -8,6 +8,8 @@ Easy way to deploy hugo static website to github pages.
 """
 
 +++
+{{% toc %}}
+
 
 **I am not the original author of this post, copied from [here](https://github.com/whipperstacker/blog/blob/master/content/post/deploying-a-hugo-site-to-github-pages.md)**
 

@@ -8,7 +8,7 @@ Learn how to migrate an existing website from Jekyll to Hugo.
 """
 math = false
 +++
-
+{{% toc %}}
 Here are a few tips for migrating an existing website from Jekyll to Hugo. These tips can be applied in conjunction with following Hugo Academic's 
 
 ## Move static content to `static`

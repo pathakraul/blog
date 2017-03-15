@@ -8,7 +8,7 @@ summary = """
 Enable/disable and configure widgets to customize your homepage.
 """
 +++
-
+{{% toc %}}
 Homepage widgets display as sections on the homepage. They can be enabled/disabled and configured as desired. Academic has the following widgets available to use:
 
 - About/biography

@@ -17,15 +17,15 @@ weight = 90
   ]
 
 # List your qualifications (such as academic degrees).
-#[[education.courses]]
-#  course = "PhD in Artificial Intelligence"
-#  institution = "Stanford University"
-#  year = 2012
+[[education.courses]]
+  course = "P.G Diploma in Embedded Systems"
+  institution = "C-DAC Advanced Computing Training School"
+  year = 2011
 
-#[[education.courses]]
-#  course = "MEng in Artificial Intelligence"
-#  institution = "Massachusetts Institute of Technology"
-#  year = 2009
+[[education.courses]]
+  course = "B.Tech in Electronics & Communication"
+  institution = "Uttar Pradesh Technical University"
+  year = 2009
 
 #[[education.courses]]
 #  course = "BSc in Artificial Intelligence"

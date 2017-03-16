@@ -49,8 +49,8 @@ body {
   padding-top: 0;
   counter-reset: captions;
   font-size: 18px;
-  color: #494e52;
-  font-family: -apple-system,".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  color: #2b2b2b;
+  font-family: "Ubuntu",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */

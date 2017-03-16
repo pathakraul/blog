@@ -1163,7 +1163,11 @@ div.alert a:hover {
   color: #fff;
 }
 
+/*************************************************
+ *  Table of Contents
+ **************************************************/
 .tocc {
+  float: true;
   min-height:20px;
   padding:19px;
   margin-bottom:20px;
@@ -1171,7 +1175,7 @@ div.alert a:hover {
   border:1px solid #e3e3e3;
   border-radius:4px;
   -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.05);
-  box-shadow:2px 0px 13px -2px #939393
+  box-shadow:0 1px 5px rgba(0,0,0,0.125)
 }
 
 .tocc blockquote {
@@ -1187,3 +1191,40 @@ div.alert a:hover {
   padding:9px;
   border-radius:3px
 }
+
+.tocc-heading {
+  background-color: #6977E3;
+  color: #fff;
+  padding: 7px 7px;
+  font-size: 22px;
+  margin-top: -20px;
+  margin-bottom: 1rem;
+  margin-right: -20px;
+  margin-left: -20px;
+  border-radius: 2px;
+  font-style: uppercase;
+  font-weight: bold;
+  font-family: Roboto;
+
+}
+
+
+/*************************************************
+ *  Image alignment
+ **************************************************/
+.imgright { float: right; margin-left: 10px; }
+.imgcap img {
+  border: 1px solid #999;
+  max-width: 100%;
+}
+.imgcap {
+  color: #555;
+  font-size: 14px;
+  text-align: center;
+}
+
+.svgdiv {
+  width: 100%;
+  text-align: center;
+}
+

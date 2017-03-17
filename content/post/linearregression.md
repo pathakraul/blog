@@ -6,6 +6,11 @@ tags = ["hugo", "github"]
 summary = "Linear regression"
 +++
 
+**Gradient descent algorithm:**  The slope of the convex $\mathcal{Cost Function}$ is subtraced from the parameter with a step size to move towards the minima
+
+$x$ = $(x-\alpha\nabla\mathcal{f(x)})$
+
+Here the move is $\alpha\nabla\mathcal{f(x)}$
 
 ```python
 import matplotlib.pyplot as plt
@@ -65,84 +70,6 @@ theta = np.ones(n)
 theta = gradientDescent(x, y, theta, alpha, m, numIterations)
 print(theta)
 ```
-
-
-```python
-for i in range (1,10):
-    print( i) 
-```
-
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-
-
-
-```python
-import numpy as np
-```
-
-
-```python
-v = np.arange(10)
-```
-
-
-```python
-v
-
-```
-
-
-
-
-    array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
-
-
-
-
-```python
-np.sum(v)
-```
-
-
-    ---------------------------------------------------------------------------
-
-    NameError                                 Traceback (most recent call last)
-
-    <ipython-input-1-1344cfd4ecfc> in <module>()
-    ----> 1 np.sum(v)
-    
-
-    NameError: name 'np' is not defined
-
-
-
-```python
-import numpy as np
-```
-
-
-```python
-v = np.arange(10)
-```
-
-
-```python
-np.sum(v)
-```
-
-
-
-
-    45
-
 
 
 
@@ -382,11 +309,7 @@ print("Local minimum occurs at {}.".format(round(temp_min,2)))
     Local minimum occurs at 3.05.
 
 
-**Gradient descent algorithm:**  The slope of the convex $\mathcal{Cost Function}$ is subtraced from the parameter with a step size to move towards the minima
 
-$x$ = $(x-\alpha\nabla\mathcal{f(x)})$
-
-Here the move is $\alpha\nabla\mathcal{f(x)}$
 
 
 ```python

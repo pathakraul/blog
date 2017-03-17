@@ -52,7 +52,7 @@ body {
   color: #000000;
   line-height: 1.42857143;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: "Junction",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  font-family: "junctionfont",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
@@ -75,7 +75,7 @@ ul, ol, dl {
 
 /* Navigation bar text */
 .navbar-default {
-  font-family: 'Junction', sans-serif;
+  font-family: 'junctionfont', sans-serif;
   font-weight: 400;
   line-height: 1.25;
   text-rendering: optimizeLegibility;
@@ -84,7 +84,7 @@ ul, ol, dl {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Junction', sans-serif;
+  font-family: 'junctionfont', sans-serif;
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -145,7 +145,7 @@ figcaption {
   line-height: 1.25;
   font-size: 1rem;
   margin-bottom: 1.65rem;
-  font-family: 'Junction', sans-serif;
+  font-family: 'junctionfont', sans-serif;
   counter-increment: captions;
 }
 
@@ -249,7 +249,7 @@ blockquote p:last-child {
 }
 
 .section-heading p {
-  font-family: 'Junction', sans-serif;
+  font-family: 'junctionfont', sans-serif;
   font-weight: 400;
   font-size: 1.1rem;
   color: #b2b2b2;
@@ -451,7 +451,7 @@ article {
   transition: color 0.6s ease;
   font-weight: 800;
   color: #2c3e50;
-  font-family: 'Junction'
+  font-family: 'junctionfont'
 }
 
 .article-metadata {
@@ -460,7 +460,7 @@ article {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #393939;
-  font-family: 'Junction'
+  font-family: 'junctionfont'
 
 }
 
@@ -861,7 +861,7 @@ footer a#back_to_top i {
 
 .navbar {
   min-height: 70px !important;
-  font-family: 'Junction'
+  font-family: 'junctionfont'
 }
 
 .navbar-default {
@@ -1209,7 +1209,7 @@ div.alert a:hover {
   border-radius: 2px;
   font-style: uppercase;
   font-weight: bold;
-  font-family: 'Junction';
+  font-family: 'junctionfont';
 
 }
 
@@ -1245,4 +1245,9 @@ div.alert a:hover {
 
 .MathJax {
   color: #431975;
+}
+
+@font-face {
+    font-family: 'junctionfont'; /*a name to be used later*/
+    src: url('/assets/junction.otf'); /*URL to font*/
 }

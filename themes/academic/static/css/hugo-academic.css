@@ -49,8 +49,10 @@ body {
   padding-top: 0;
   counter-reset: captions;
   font-size: 18px;
-  color: #2b2b2b;
-  font-family: "Ubuntu",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  color: #000000;
+  line-height: 1.42857143;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-family: "Junction",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
@@ -158,12 +160,14 @@ pre,
 code {
   font-family: 'Consolas', 'Courier New', 'Courier', monospace;
   font-size: 18px;
+  border-color: #ecf0f1;
 }
 
 pre {
   margin: 0 0 1rem 0;
   overflow: auto;
 }
+
 
 /* Quotes */
 blockquote {
@@ -446,7 +450,8 @@ article {
   color: #151515;
   transition: color 0.6s ease;
   font-weight: 800;
-  color: #696969;
+  color: #2c3e50;
+  font-family: 'Junction'
 }
 
 .article-metadata {
@@ -1137,8 +1142,8 @@ div.alert a:hover {
 
 .alert-idea {
   color: #fff;
-  background-color: #544b99; /* Material LightBlue500 */
-  border-color: #544b99;
+  background-color: #6257b5; /* Material LightBlue500 */
+  border-color: #6257b5;
 }
 
 .jumbotron p {
@@ -1147,7 +1152,7 @@ div.alert a:hover {
 }
 
 .btn-intro {
-  background-color: #03A9F4;
+  background-color: #ecf0f1;
   border-color: #00E5FF;
   color: #fff;
   padding: 0.75rem 1.5rem;
@@ -1228,3 +1233,12 @@ div.alert a:hover {
   text-align: center;
 }
 
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    font-size: 15px;
+    font-family: "monospace";
+    background-color: #ecf0f1;
+    border-color: #ecf0f1;
+}

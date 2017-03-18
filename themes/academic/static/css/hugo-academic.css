@@ -52,7 +52,7 @@ body {
   color: #000000;
   line-height: 1.42857143;
   -webkit-font-smoothing: subpixel-antialiased;
-  font-family: "junctionfont",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  font-family: "droidsansfont",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
@@ -84,7 +84,7 @@ ul, ol, dl {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'junctionfont', sans-serif;
+  font-family: 'droidsansfont', sans-serif;
   font-weight: 400;
   margin-bottom: .5rem;
   line-height: 1.25;
@@ -156,17 +156,22 @@ figcaption h4 {
   margin: 0;
 }
 
-pre,
+
 code {
   font-family: 'Consolas', 'Courier New', 'Courier', monospace;
   font-size: 18px;
-  border-color: #ecf0f1;
-  box-shadow: 1px 1px 6px 0px #c1c1c1
-}
+  background-color: #efefef;
+ }
+
 
 pre {
+  font-family: 'Consolas', 'Courier New', 'Courier', monospace;
+  font-size: 18px;
+  border-color: #ecf0f1;
   margin: 0 0 1rem 0;
   overflow: auto;
+  margin-top: 7px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -401,7 +406,7 @@ article {
 }
 
 .article-container {
-  max-width: 900px;
+  max-width: 1100px;
   padding: 1rem 20px 0 20px;
   margin: 0 auto 0 auto;
   font-size: 18px;
@@ -461,7 +466,7 @@ article {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #393939;
-  font-family: 'junctionfont'
+  font-family: 'droidsansfont'
 
 }
 
@@ -1084,8 +1089,9 @@ table > tbody > tr:hover > th {
  **************************************************/
 
 div.alert {
-  border-radius: 7px;
+  border-radius: 4px;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
 div.alert p {
@@ -1118,7 +1124,7 @@ div.alert-idea p:first-child::before {
 }
 
 div.alert a {
-  color: rgba(255,255,255,0.9);
+ 
   text-decoration: none;
   border-bottom: solid 1px #e4e4e4;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
@@ -1130,15 +1136,15 @@ div.alert a:hover {
 }
 
 .alert-note {
-  color: #fff;
-  background-color: #2b815e; /* Material LightBlue500 */
-  border-color: #2b815e;
+  color: #ffffff;
+  background-color:#15af74; /* Material LightBlue500 */
+  border-color: #15af74;
 }
 
 .alert-warning {
   color: #fff;
   background-color: #f44336; /* Material Red500 */
-  border-color: #ebccd1;
+  border-color: #f44336;
 }
 
 .alert-idea {
@@ -1240,8 +1246,7 @@ div.alert a:hover {
     padding: 0.5em;
     font-size: 15px;
     font-family: monospace;
-    background-color: #ececec;
-    border-color: #ececec;
+    background-color: #f7f7f7;
 }
 
 .MathJax {
@@ -1251,4 +1256,14 @@ div.alert a:hover {
 @font-face {
     font-family: 'junctionfont'; /*a name to be used later*/
     src: url('/assets/junction.otf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'droidsansfont'; /*a name to be used later*/
+    src: url('/assets/droidsans.ttf'); /*URL to font*/
+}
+
+strong {
+    text-rendering: optimizeLegibility;
+    color: rgba(0, 0, 0, 0.82);
 }

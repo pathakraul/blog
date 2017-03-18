@@ -1244,8 +1244,8 @@ div.alert a:hover {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    font-size: 15px;
-    font-family: monospace;
+    font-size: 18px;
+    font-family: 'codefont';
     background-color: #f7f7f7;
 }
 
@@ -1255,12 +1255,17 @@ div.alert a:hover {
 
 @font-face {
     font-family: 'junctionfont'; /*a name to be used later*/
-    src: url('/assets/junction.otf'); /*URL to font*/
+    src: url('/assets/fonts/junction.otf'); /*URL to font*/
 }
 
 @font-face {
     font-family: 'droidsansfont'; /*a name to be used later*/
-    src: url('/assets/droidsans.ttf'); /*URL to font*/
+    src: url('/assets/fonts/droidsans.ttf'); /*URL to font*/
+}
+
+@font-face {
+    font-family: 'codefont'; /*a name to be used later*/
+    src: url('/assets/fonts/mononoki.ttf'); /*URL to font*/
 }
 
 strong {

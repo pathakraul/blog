@@ -60,9 +60,9 @@
     {{ end }} -->
 
 
-  {% if page.mathjax %}
+  <!-- {% if page.mathjax %}
+  {% endif %}-->
   <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
   <script>
     MathJax.Hub.Config({
     tex2jax: {
@@ -73,9 +73,9 @@
       skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
       TeX: { equationNumbers: { autoNumber: "AMS" },
          extensions: ["AMSmath.js", "AMSsymbols.js"] },
-      preview: "none"
+      preview: "TeX"
       },
-      "fast-preview": {disabled: true}
+      "fast-preview": {disabled: false}
     });
   </script>
 

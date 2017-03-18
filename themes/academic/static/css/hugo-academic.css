@@ -161,6 +161,7 @@ code {
   font-family: 'Consolas', 'Courier New', 'Courier', monospace;
   font-size: 18px;
   border-color: #ecf0f1;
+  box-shadow: 1px 1px 6px 0px #c1c1c1
 }
 
 pre {
@@ -1239,8 +1240,8 @@ div.alert a:hover {
     padding: 0.5em;
     font-size: 15px;
     font-family: monospace;
-    background-color: #ecf0f1;
-    border-color: #ecf0f1;
+    background-color: #ececec;
+    border-color: #ececec;
 }
 
 .MathJax {

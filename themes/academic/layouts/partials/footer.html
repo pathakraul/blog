@@ -60,6 +60,9 @@
     {{ end }} -->
 
 
+  {% if page.mathjax %}
+  <script type="text/javascript" src="/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
   <script>
     MathJax.Hub.Config({
     tex2jax: {
@@ -87,8 +90,5 @@
       }
     });
   </script>
-  {% if page.mathjax %}
-  <script type="text/javascript" src="/js/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  {% endif %}
   </body>
 </html>

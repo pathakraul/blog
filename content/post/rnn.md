@@ -2,6 +2,7 @@
 tags = ["deeplearning"]
 date = "2017-03-12T00:19:04+05:30"
 title = "Deep Learning Through Recurrent Neural Networks"
+mathjax = true
 #categories = [""]
 
 +++

@@ -4,13 +4,14 @@ title = "Linear Regression in easy way"
 #categories = [""]
 tags = ["hugo", "github"]
 summary = "Linear regression"
+mathjax = true
 +++
 
 **Gradient descent algorithm:**  The slope of the convex $\mathcal{Cost Function}$ is subtraced from the parameter with a step size to move towards the minima
 
 $x$ = $(x-\alpha\nabla\mathcal{f(x)})$
 
-Here the move is $\alpha\nabla\mathcal{f(x)}$
+Here the move is \\(\alpha\nabla\mathcal{f(x)}\\)
 
 ```python
 import matplotlib.pyplot as plt

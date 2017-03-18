@@ -48,10 +48,9 @@ body {
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
-  font-size: 18px;
-  color: #000000;
+  color: rgba(0, 0, 0, 0.8);
   line-height: 1.42857143;
-  -webkit-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: antialiased;
   font-family: "droidsansfont",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
@@ -409,8 +408,8 @@ article {
   max-width: 1100px;
   padding: 1rem 20px 0 20px;
   margin: 0 auto 0 auto;
-  font-size: 18px;
-  line-height: 22px
+  font-size: 20px;
+  line-height: 26px
 }
 
 .article-header {
@@ -465,13 +464,13 @@ article {
   line-height: 30px; /* Match share bar line height. */
   font-size: 16px;
   letter-spacing: 0.03em;
-  color: #393939;
-  font-family: 'droidsansfont'
+  color: rgb(107, 107, 107);
+  font-family: 'Roboto'
 
 }
 
 .article-metadata a {
-  color: #393939;
+  color: rgb(107, 107, 107);
 }
 
 .article-metadata a:hover {
@@ -832,9 +831,13 @@ footer a#back_to_top i {
 }
 
 .btn-primary.btn-outline {
-  color: #ffffff;
-  border-color: #ffffff;
-  background-color: #5a84e7;
+  color: #000000;
+  font-size: 16px;
+  font-family: 'droidsansfont';
+  text-transform: None;
+  border-color: #ffd166;
+  background-color: #ffd166;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 .btn-success.btn-outline {
@@ -867,12 +870,13 @@ footer a#back_to_top i {
 
 .navbar {
   min-height: 70px !important;
-  font-family: 'junctionfont'
+  font-family: 'droidsansfont';
 }
 
 .navbar-default {
-  background: #fff;
-  box-shadow: 0 0.125rem 0.25rem 0 rgba(0,0,0,.11)
+  background: #ffd166;
+  border-color: #ffd166;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
 nav#navbar-main li {
@@ -885,15 +889,18 @@ nav#navbar-main li {
   white-space: nowrap;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
-  color: #34495e;
-  font-weight: 600;
+  color: #000000;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'droidsansfont';
+  text-shadow: 0 0 .3px #000000;
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  color: #0095eb;
-  font-weight: 700;
+  color: #000000;
+  font-weight: normal;
   background-color: transparent !important; /* Override Bootstrap. */
 }
 
@@ -1268,7 +1275,15 @@ div.alert a:hover {
     src: url('/assets/fonts/mononoki.ttf'); /*URL to font*/
 }
 
-strong {
+.strong {
     text-rendering: optimizeLegibility;
     color: rgba(0, 0, 0, 0.82);
+}
+
+.pager li>a, .pager li>span {
+  background-color: #ffd166;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }

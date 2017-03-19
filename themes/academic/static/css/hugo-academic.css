@@ -874,9 +874,9 @@ footer a#back_to_top i {
 }
 
 .navbar-default {
-  background: #313131;
-  border-color: #313131;
-  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  background: #3c3c3c;
+  border-color: #3c3c3c;
+  box-shadow: 0 0 9px 1px #000000
 }
 
 nav#navbar-main li {
@@ -1222,8 +1222,8 @@ div.alert a:hover {
   margin-left: -20px;
   border-radius: 2px;
   font-style: uppercase;
-  font-weight: bold;
-  font-family: 'junctionfont';
+  font-weight: normal;
+  font-family: 'droidsansfont';
 
 }
 

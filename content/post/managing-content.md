@@ -22,8 +22,20 @@ caption = "Image credit: [**Academic**](https://github.com/gcushen/hugo-academic
 
 ```
 
+{{% alert idea %}}
+If you wish to prevent a featured image automatically being used for a post's thumbnail on the homepage, the **preview = false** parameter can be added to **header**.
+{{% /alert %}}
+
 {{% alert note %}}
-If you wish to prevent a featured image automatically being used for a post's thumbnail on the homepage, the `preview = false` parameter can be added to `[header]`.
+If you wish to prevent a featured image automatically being used for a post's thumbnail on the homepage, the **preview = false** parameter can be added to **header**.
+{{% /alert %}}
+
+{{% alert warning %}}
+If you wish to prevent a featured image automatically being used for a post's thumbnail on the homepage, the **preview = false** parameter can be added to **header**.
+{{% /alert %}}
+
+{{% alert error %}}
+If you wish to prevent a featured image automatically being used for a post's thumbnail on the homepage, the **preview = false** parameter can be added to **header**.
 {{% /alert %}}
 
 ## Create a publication

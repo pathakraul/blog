@@ -452,11 +452,10 @@ article {
 }
 
 .article-title a {
-  color: #151515;
   transition: color 0.6s ease;
   font-weight: 800;
-  color: #2c3e50;
-  font-family: 'junctionfont'
+  color: rgba(44, 62, 80, 0.9);
+  font-family: 'droidsansfont'
 }
 
 .article-metadata {
@@ -837,6 +836,7 @@ footer a#back_to_top i {
   text-transform: None;
   border-color: #ffd166;
   background-color: #ffd166;
+  margin-top: 6px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
 }
 
@@ -1098,6 +1098,7 @@ table > tbody > tr:hover > th {
 div.alert {
   border-radius: 4px;
   margin-bottom: 1rem;
+  margin-top: 1rem;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -1116,18 +1117,22 @@ div.alert p:first-child::before {
   left: -2rem;
   font-family: 'FontAwesome';
   font-size: 1.5rem;
-  color: #fff;
+  color: #000000;
   content: '\f05a';
   width: 1.5rem;
   text-align: center;
 }
 
-div.alert-warning p:first-child::before {
+div.alert-error p:first-child::before {
   content: '\f071';
 }
 
+div.alert-warning p:first-child::before {
+  content: '\f12a';
+}
+
 div.alert-idea p:first-child::before {
-  content: '\f005';
+  content: '\f10d';
 }
 
 div.alert a {
@@ -1143,21 +1148,27 @@ div.alert a:hover {
 }
 
 .alert-note {
-  color: #ffffff;
-  background-color:#15af74; /* Material LightBlue500 */
+  color: rgba(0, 0, 0, .8);
+  background-color:#15af74; /* Material green */
   border-color: #15af74;
 }
 
 .alert-warning {
-  color: #fff;
-  background-color: #f44336; /* Material Red500 */
-  border-color: #f44336;
+  color: rgba(0, 0, 0, .8);
+  background-color: #fdc456; /* Material Red500 */
+  border-color: #fdc456;
+}
+
+.alert-error {
+  color: rgba(0, 0, 0, .8);
+  background-color: #FF6154; /* Material Red500 */
+  border-color: #FF6154;
 }
 
 .alert-idea {
-  color: #fff;
-  background-color: #6257b5; /* Material LightBlue500 */
-  border-color: #6257b5;
+  color: rgba(0, 0, 0, .8);
+  background-color: #978af5; /* Material LightBlue500 */
+  border-color: #978af5;
 }
 
 .jumbotron p {
@@ -1212,7 +1223,7 @@ div.alert a:hover {
 }
 
 .tocc-heading {
-  background-color: #6977E3;
+  background-color: #67686f;
   color: #fff;
   padding: 7px 7px;
   font-size: 22px;
@@ -1251,13 +1262,14 @@ div.alert a:hover {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    font-size: 18px;
+    font-size: 19px;
     font-family: 'codefont';
     background-color: #ecf0f1;
 }
 
 .MathJax {
   color: #431975;
+  font-size: 18px
 }
 
 @font-face {

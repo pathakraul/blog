@@ -10,7 +10,7 @@ mathjax = true
 
 ### Multivariate Linear Regression
 
-Linear regression with multiple variables is also known as "multivariate linear regression". We now introduce notation for equations where we can have any number of input variables.
+Linear regression with multiple variables is also known as "multivariate linear regression". Lets introduce notation for equations where we can have any number of input variables.
 
 {{% alert note %}}
 Note: \\(\theta^T\\) is a 1 by (n+1) matrix and not an (n+1) by 1 matrix
@@ -33,7 +33,7 @@ h_\theta (x) = \theta_0 + \theta_1 x_1 + \theta_2 x_2 + \theta_3 x_3 + \cdots + 
 \end{align*}
 </div>
 
-In order to develop intuition about this function, we can think about θ0 as the basic price of a house, θ1 as the price per square meter, θ2 as the price per floor, etc. x1 will be the number of square meters in the house, x2 the number of floors, etc.
+In order to develop intuition about this function, we can think about $\theta\_0$ as the basic price of a house, $\theta\_1$ as the price per square meter, $\theta\_2$ as the price per floor, etc. $x\_1$ will be the number of square meters in the house, $x\_2$ the number of floors, etc.
 
 Using the definition of matrix multiplication, our multivariable hypothesis function can be concisely represented as:
 
@@ -103,3 +103,78 @@ In other words:
 </div>
 
 
+### Gradient Descent in Practice I - Feature Scaling
+
+{{% alert note %}}
+We can speed up gradient descent by having each of our input values in roughly the same range. This is because \\(\theta\\) will descend quickly on small ranges and slowly on large ranges, and so will oscillate inefficiently down to the optimum when the variables are very uneven.
+{{% /alert %}}
+
+
+The way to prevent this is to modify the ranges of our input variables so that they are all roughly the same. Ideally:
+
+$$ −1 ≤ x_i ≤ 1 $$
+
+or
+
+$$ −0.5 ≤ x_i ≤ 0.5 $$
+
+These aren't exact requirements; we are only trying to speed things up. The goal is to get all input variables into roughly one of these ranges, give or take a few.
+
+Two techniques to help with this are feature scaling and mean normalization. Feature scaling involves dividing the input values by the range (i.e. the maximum value minus the minimum value) of the input variable, resulting in a new range of just 1. Mean normalization involves subtracting the average value for an input variable from the values for that input variable resulting in a new average value for the input variable of just zero. To implement both of these techniques, adjust your input values as shown in this formula:
+
+<div>
+\begin{align*}
+    x_i & :=(x_i−μ_i)/s_i \newline
+    & s_i = \text{Standard Deviation} \newline
+    & μ_i = \text{Mean}
+\end{align*}
+</div>
+
+Where μi is the average of all the values for feature (i) and si is the range of values (max - min), or si is the standard deviation.
+
+Note that dividing by the range, or dividing by the standard deviation, give different results. The quizzes in this course use range - the programming exercises use standard deviation.
+
+For example, if xi represents housing prices with a range of 100 to 2000 and a mean value of 1000, then, xi:=price−10001900.
+
+### Gradient Descent in Practice II - Learning Rate
+
+Note: [5:20 - the x -axis label in the right graph should be θ rather than No. of iterations ]
+
+Debugging gradient descent. Make a plot with number of iterations on the x-axis. Now plot the cost function, J(θ) over the number of iterations of gradient descent. If J(θ) ever increases, then you probably need to decrease α.
+
+Automatic convergence test. Declare convergence if J(θ) decreases by less than E in one iteration, where E is some small value such as 10−3. However in practice it's difficult to choose this threshold value.
+
+<div class="imgcap">
+<img src="/assets/lr-gd/costfunction-alpha1.png" style="border:none; width:60%;">
+</div>
+
+It has been proven that if learning rate α is sufficiently small, then \\( J(\theta)\\) will decrease on every iteration.
+
+<div class="imgcap">
+<img src="/assets/lr-gd/costfunction-alpha2.png" style="border:none; width:60%;">
+</div>
+
+To summarize:
+If α is too small: slow convergence.
+If α is too large: \\( J(\theta)\\) may not decrease on every iteration and thus may not converge.
+
+### Features and Polynomial Regression
+
+We can improve our features and the form of our hypothesis function in a couple different ways. We can combine multiple features into one. For example, we can combine $x\_1$ and $x\_2$ into a new feature $x\_3$ by taking $x\_1*x\_2$.
+
+#### Polynomial Regression
+
+Our hypothesis function need not be linear (a straight line) if that does not fit the data well.
+
+We can change the behavior or curve of our hypothesis function by making it a quadratic, cubic or square root function (or any other form).
+
+For example, if our hypothesis function is $h\_{\theta}(x) = \theta\_0 + \theta\_1 x\_1$ then we can create additional features based on $x\_1$ , to get the quadratic function $h\_{\theta}(x) = \theta\_0 + \theta\_1 x\_1 + \theta\_2 x\_1^2$ or the cubic function $h\_{\theta}(x) = \theta\_0 + \theta\_1 x\_1 + \theta\_2 x\_1^2 + \theta\_3 x\_1^3$. 
+
+<br \> <br \>
+
+In the cubic version, we have created new features $x\_2$ and $x\_3$ where $x\_2=x\_1^2$ and $x\_3=x\_1^3$. To make it a square root function, we could do: $h\_{\theta}(x) = \theta\_0 + \theta\_1 x\_1 + \theta\_2 \sqrt{x\_1}$
+<br \>
+{{% alert note %}}
+One important thing to keep in mind is, if you choose your features this way then feature scaling becomes very important.
+{{% /alert %}}
+eg. if $x\_1$ has range 1 - 1000 then range of $x\_1^2$ becomes 1 - 1000000 and that of $x\_1^3$ becomes 1 - 1000000000

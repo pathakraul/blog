@@ -46,6 +46,7 @@ body {
   font-size: 19px;
   line-height: inherit;
   color: inherit;
+  background-color: #f3f3ef;
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
   counter-reset: captions;
@@ -901,7 +902,7 @@ nav#navbar-main li {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
-  color: #ffffff;
+  color: #bcb8ff;
   font-size: 25px;
   font-weight: normal;
   background-color: transparent !important; /* Override Bootstrap. */
@@ -1252,7 +1253,7 @@ div.alert a:hover {
 }
 
 .tocc-heading {
-  background-color: #2f2f2f;
+  background-color: #444444;
   color: #fff;
   padding: 7px 7px;
   font-size: 22px;
@@ -1298,7 +1299,7 @@ div.alert a:hover {
 }
 
 .MathJax {
-  color: #431975;
+  color: #000000;
   font-size: 18px
 }
 

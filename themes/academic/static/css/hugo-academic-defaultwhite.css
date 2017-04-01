@@ -762,8 +762,9 @@ article {
  **************************************************/
 
 footer {
-  margin: 4rem 0 0;
+  /*margin: 4rem 0 0;*/
   padding: 2rem 0;
+  background-color: #3c3c3c;
   width: 100%;
 }
 

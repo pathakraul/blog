@@ -47,11 +47,12 @@ body {
   color: inherit;
   margin-top: 71px; /* Offset body content by navbar height. */
   padding-top: 0;
+  letter-spacing: -0.03em;
   counter-reset: captions;
   color: rgba(0, 0, 0, 0.8);
   line-height: 1.42857143;
   -webkit-font-smoothing: antialiased;
-  font-family: "Bitter",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
+  font-family: "droidsansfont",".SFNSText-Regular","San Francisco","Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
 
 }
 @media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
@@ -88,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   line-height: 1.25;
   color: #313131;
+  letter-spacing: -.03em;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -892,7 +894,7 @@ nav#navbar-main li {
   transition: 0.2s ease;
   color: #ffffff;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   font-family: 'droidsansfont';
   text-shadow: 0 0 .3px #000000;
 }
